@@ -12,7 +12,7 @@ const connectDB = async () => {
             console.log("Dropped stale phone_1 index")
         }
     } catch (error) {
-        console.log("Error in database")
+        console.log("Error in database:", error.message)
     }
 }
 
